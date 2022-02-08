@@ -1,8 +1,12 @@
-type Query {
-    shows(titleFilter: String): [Show]
+scalar LocalDate
+
+type Training {
+    id: ID!
+    name: String
+    date: LocalDate
+    longDescription: String
 }
 
-type Show {
-    title: String
-    releaseYear: Int
+type Query {
+    training: [Training]
 }
