@@ -1,4 +1,4 @@
-package com.shows;
+package com.example.shows;
 
 public class Show {
     private final String title;
