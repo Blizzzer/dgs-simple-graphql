@@ -1,9 +1,9 @@
-scalar LocalDate
+scalar DateTime
 
 type Training {
     id: ID!
     name: String
-    date: LocalDate
+    date: DateTime
     longDescription: String
 }
 

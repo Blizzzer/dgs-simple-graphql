@@ -1,4 +1,4 @@
-package com.shows;
+package com.example.trainings;
 
 import com.netflix.graphql.dgs.DgsComponent;
 import com.netflix.graphql.dgs.DgsQuery;

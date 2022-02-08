@@ -1,4 +1,4 @@
-package com.shows;
+package com.example.trainings;
 
 import lombok.Data;
 import org.springframework.data.neo4j.core.schema.GeneratedValue;
