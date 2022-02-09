@@ -1,12 +1,12 @@
-scalar DateTime
+scalar Date
 
 type Training {
     id: ID!
     name: String
-    date: DateTime
+    date: Date
     longDescription: String
 }
 
 type Query {
-    training: [Training]
+    trainings: [Training]
 }
