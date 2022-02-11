@@ -1,4 +1,4 @@
-package com.example.trainings;
+package com.example.tweets;
 
 import com.netflix.graphql.dgs.DgsComponent;
 import com.netflix.graphql.dgs.DgsQuery;
@@ -8,12 +8,12 @@ import java.util.List;
 
 @DgsComponent
 @RequiredArgsConstructor
-public class TrainingDataFetcher {
+public class TweetDataFetcher {
 
-    private final TrainingRepository repository;
+    private final TweetRepository repository;
 
     @DgsQuery
-    public List<Training> trainings() {
+    public List<Tweet> tweets() {
         return repository.findAll();
     }
 }

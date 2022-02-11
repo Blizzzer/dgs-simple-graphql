@@ -1,4 +1,4 @@
-package com.example.trainings;
+package com.example.tweets;
 
 import com.netflix.graphql.dgs.DgsComponent;
 import com.netflix.graphql.dgs.DgsRuntimeWiring;

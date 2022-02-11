@@ -1,12 +1,12 @@
-scalar Date
-
-type Training {
-    id: ID!
-    name: String
-    date: Date
-    longDescription: String
+type Tweet {
+    _id: Int
+    favourites: String
+    id: Int
+    id_str: String
+    import_method: String
+    text: String
 }
 
 type Query {
-    trainings: [Training]
+    tweets: [Tweet]
 }

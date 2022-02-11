@@ -4,9 +4,14 @@ spring:
       INDENT_OUTPUT: true
   data:
     neo4j:
-      uri: neo4j://localhost:7687
-      password: password
-      username: neo4j
+      database: twitter
+  neo4j:
+    uri: bolt://demo.neo4jlabs.com:7687
+    authentication:
+      password: twitter
+      username: twitter
+    security:
+      encrypted: true
 server:
   servlet:
     encoding:
@@ -22,3 +27,15 @@ logging:
             bolt:
               request:
                 BoltRequest: DEBUG
+
+#org:
+#  neo4j:
+#    driver:
+#      uri: bolt://demo.neo4jlabs.com:7687
+#      authentication:
+#        username: twitter
+#        password: twitter
+#      config :
+#        encrypted : true
+#database: twitter
+
